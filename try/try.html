@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="try.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Dhotis</a>
+
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="demo.html">Collections</a></li>
+            <li><a href="#aboutus">About_Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <a href="#cart-container"> <i class='bx bx-cart'></i> </a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <div class="img">
+        <img src="model-removebg-preview.png" alt="reload">
+    </div>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>SRI MURUGAN <br><span>TEXTILES</span></h1>
+            <p>Discover premium fabrics and stunning designs to elevate every occasion!</p>
+            <a href="demo.html" class="btn">View Collection</a>
+        </div>
+    </section>
+
+    <!----featured-->
+    <section class="featured" id="featured">
+        <div class="center-text">
+            <h2>Featured Categories</h2>
+        </div>
+        <div class="maincontainer">
+            <div class="container">
+                <div id="handloom" class="image" onclick="showProducts('handloom')"></div>
+                <div class="overlay">
+                    <p onclick="showProducts('handloom')" class="image-text">HANDLOOM</a>
+                </div>
+            </div>
+            <div class="container-one">
+                <div id="powerloom" class="image" onclick="showProducts('powerloom')"></div>
+                <div class="overlay-one">
+                    <p onclick="showProducts('powerloom')" class="image-text-one">POWERLOOM</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="aboutus" id="aboutus">
+            <div class="aboutus-container">
+                <h2>About Us</h2>
+                <p>
+                    Welcome to <strong>Sri Murugan Textiles</strong> — your one-stop destination for premium quality dhotis. 
+                    With a legacy rooted in tradition and excellence, we bring you an exclusive collection of <strong>Handloom</strong> and <strong>Powerloom</strong> dhotis, crafted for comfort, elegance, and purity.
+                </p>
+                <p>
+                    We take pride in offering <strong>100% pure cotton</strong> dhotis that cater to all occasions — from daily wear to festive celebrations. 
+                    Our ecommerce platform simplifies your shopping experience with seamless browsing, detailed product views, and secure payments.
+                </p>
+                <p>
+                    Our mission is to preserve the rich heritage of Indian attire while blending it with modern convenience. 
+                    Whether you're looking for traditional styles or contemporary patterns, our curated collections ensure you always find something meaningful and majestic.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <p>We’re here to help! Reach out to us for product inquiries, bulk orders, or support.</p>
+        
+                <div class="contact-details">
+                    <div class="info">
+                        <p><strong>Address:</strong> 123 Bazzar Street, Salem, Tamil Nadu, India</p>
+                        <p><strong>Phone:</strong> +91 80721 81055</p>
+                        <p><strong>Email:</strong> support@murugantextiles.com</p>
+                    </div>
+        
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+
+
+
+
+</body>
+
+</html>

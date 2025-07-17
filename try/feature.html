@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handloom and Powerloom</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .image-container img {
+      width: 200px;
+      height: 200px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-radius: 10px;
+      transition: transform 0.2s, border 0.2s;
+    }
+    .image-container img:hover {
+      transform: scale(1.05);
+      border: 2px solid #007BFF;
+    }
+    .products {
+      display: none;
+      margin-top: 20px;
+    }
+    .products h2 {
+      margin-bottom: 10px;
+    }
+    .products ul {
+      list-style: none;
+      padding: 0;
+    }
+    .products ul li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Handloom and Powerloom Products</h1>
+<div class="image-container">
+  <img id="handloomImage" src="handloom.jpg" alt="Handloom">
+  <img id="powerloomImage" src="powerloom1.avif" alt="Powerloom">
+</div>
+
+<div id="handloomProducts" class="products">
+  <h2>Handloom Products</h2>
+  <ul>
+    <li>Sarees</li>
+    <li>Shawls</li>
+    <li>Curtains</li>
+    <li>Tablecloths</li>
+  </ul>
+</div>
+
+<div id="powerloomProducts" class="products">
+  <h2>Powerloom Products</h2>
+  <ul>
+    <li>Denim Fabrics</li>
+    <li>Bed Sheets</li>
+    <li>Dress Materials</li>
+    <li>Towels</li>
+  </ul>
+</div>
+
+<script>
+  // Get elements
+  const handloomImage = document.getElementById('handloomImage');
+  const powerloomImage = document.getElementById('powerloomImage');
+  const handloomProducts = document.getElementById('handloomProducts');
+  const powerloomProducts = document.getElementById('powerloomProducts');
+
+  // Event listeners
+  handloomImage.addEventListener('click', () => {
+    handloomProducts.style.display = 'block';
+    powerloomProducts.style.display = 'none';
+  });
+
+  powerloomImage.addEventListener('click', () => {
+    powerloomProducts.style.display = 'block';
+    handloomProducts.style.display = 'none';
+  });
+</script>
+
+</body>
+</html>
+
+
+<div class="loom">
+  <div class="wrapper">
+      <div class="image">
+        <div id="handloom" class="image" onclick="showProducts('handloom')"></div>
+          <div class="content">
+              <h1>HANDLOOM</h1>
+              <p>A Heritage Technique</p>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="wrapper">
+      <div class="image">
+          <img src="powerloom1.avif" alt="reload" height="290px" id="handloomImage">
+          <div class="content">
+              <h1>POWERLOOM</h1>
+              <p>A Modern Technique</p>
+          </div>
+      </div>
+  </div>
+
+ 
+</div>
